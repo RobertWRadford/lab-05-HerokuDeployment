@@ -20,29 +20,29 @@ Estimate of time needed to complete: 30 minutes
 
 Start time: 5:40pm
 
-Finish time: _____
+Finish time: 6:00pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 20 minutes
 
 ## Feature 3:
 
 Number and name of feature: modify the contents
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 1 hour
 
-Start time: _____
+Start time: 6:05pm
 
-Finish time: _____
+Finish time: 8:10pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 2 hours 5 minutes
 
 ## Feature 4:
 
 Number and name of feature: add functionality
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 1 hour
 
-Start time: _____
+Start time: 8:11pm
 
 Finish time: _____
 
