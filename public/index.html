@@ -153,13 +153,13 @@
 
 							<form method="post" action="#">
 								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<!-- <div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div> -->
+									<div class="col-6 col-12-mobile"><input type="text" id='emailSubject' name="Subject" placeholder="Subject" /></div>
 									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
+										<textarea name="message" id='emailContent' placeholder="Message"></textarea>
 									</div>
 									<div class="col-12">
-										<input type="submit" value="Send Message" />
+										<input type="submit" id='sendEmail' value="Send Message" />
 									</div>
 								</div>
 							</form>
@@ -180,6 +180,14 @@
 			</div>
 
 		<!-- Scripts -->
+			<script>
+				let sending = document.getElementById('sendEmail');
+				sending.addEventListener('click', function(e){
+					e.preventDefault();
+					location.href='mailto:RobertR928@gmail.com?subject='+document.getElementById('emailSubject').value+'&body='+document.getElementById('emailContent').value;
+				});
+			</script>
+
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 
 			<!-- jquery.scrolly.min.js -->

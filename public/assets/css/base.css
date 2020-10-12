@@ -110,7 +110,15 @@ input::placeholder, textarea::placeholder {
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
+		color: white;
+	}
+
+	input:focus, textarea:focus, select:focus {
 		color: black;
+	}
+
+	input[type="submit"]{
+		background: rgb(50, 130, 41);
 	}
 
 	h1, h2, h3, h4, h5, h6 {
