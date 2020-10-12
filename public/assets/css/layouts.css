@@ -175,7 +175,7 @@ br.clear {
 	}
 
 	.row > .col-6 {
-		width: 50%;
+		width: 100%;
 	}
 
 	.row > .off-6 {
