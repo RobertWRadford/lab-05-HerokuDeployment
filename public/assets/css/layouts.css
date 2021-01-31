@@ -1602,7 +1602,7 @@ article > .container, article:last-child {
 
 		.image.featured {
 			display: block;
-			width: max(260px, 60%);
+			width: max(220px, 40%);
 			margin: auto;
 			margin-bottom: max(15px, 1.5vw);
 		}
