@@ -10,6 +10,10 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 	transition: none !important;
 }
 
+.repolink *:hover {
+	color: darkgreen;
+}
+
 h2.alt {
 		color: #888;
 	}
@@ -33,6 +37,7 @@ br.clear {
 		background: grey;
 		border-radius: 10px;
 		padding: 15px;
+		font-size: max(22px, 2.2vw);
 	}
 
 	.three > .container > p {
@@ -47,6 +52,7 @@ br.clear {
 		border-radius: 10px;
 		font-family: 'Oswald', sans-serif;
 		font-style: italic;
+		padding: 3.5vw;
 	}
 
 @media screen and (min-width: 961px) and (max-width: 1880px) {
@@ -1319,6 +1325,7 @@ br.clear {
 			flex-wrap: wrap;
 			box-sizing: border-box;
 			align-items: stretch;
+			justify-content: center;
 		}
 
 			.row > * {
@@ -1577,7 +1584,7 @@ article > .container, article:last-child {
 
 		.image img {
 			display: block;
-			width: 70%;
+			width: 100%;
 			margin: auto;
 		}
 
@@ -1599,8 +1606,9 @@ article > .container, article:last-child {
 
 		.image.featured {
 			display: block;
-			width: 100%;
-			margin: 0 0 2em 0;
+			width: max(260px, 60%);
+			margin: auto;
+			margin-bottom: max(15px, 1.5vw);
 		}
 
 		.image.left {
@@ -1664,6 +1672,10 @@ article > .container, article:last-child {
 	.item {
 		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
 		margin-bottom: 40px;
+		display: flex;
+	    flex-direction: column;
+	    justify-content: space-between;
+	    width: min(400px, 80%);
 	}
 
 		.item header {
