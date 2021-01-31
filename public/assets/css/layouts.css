@@ -102,6 +102,7 @@ br.clear {
 	flex-wrap: wrap;
 	box-sizing: border-box;
 	align-items: stretch;
+	justify-content: center;
 }
 
 	.row > * {
@@ -780,10 +781,6 @@ br.clear {
 				margin-left: -40px;
 			}
 
-				.row > * {
-					padding: 40px 0 0 40px;
-				}
-
 				.row.gtr-uniform {
 					margin-top: -40px;
 				}
@@ -1325,7 +1322,6 @@ br.clear {
 			flex-wrap: wrap;
 			box-sizing: border-box;
 			align-items: stretch;
-			justify-content: center;
 		}
 
 			.row > * {
@@ -1670,16 +1666,20 @@ article > .container, article:last-child {
 /* Item */
 
 	.item {
-		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
-		margin-bottom: 40px;
+		flex: 1 1 min(max(280px, 30%), 80%);
+		margin: 25px;
 		display: flex;
 	    flex-direction: column;
 	    justify-content: space-between;
-	    width: min(400px, 80%);
+	    width: min(max(280px, 30%), 80%);
+	    border: solid 2px rgba(0,85,0,.55);
+	    border-radius: 35px;
+	    background: rgba(0,65,0,.35);
+	    padding: 25px;
 	}
 
 		.item header {
-			background: grey;
+			background: rgb(50, 130, 41);
 			margin: 0;
 			padding: 1em 0 1em 0;
 			font-size: 0.8em;
